@@ -16,8 +16,8 @@ function createCalculator(){
         performCalculation(){
     
             let calculation = this.display.value.toLowerCase()
-            .replace('/÷/g', '/')
-            .replace('/x/g', '*');
+            .replace(/÷/g, '/')
+            .replace(/x/g, '*');
 
             try{
                 if (/[a-zA-Z]/g.test(calculation)) {
