@@ -20,14 +20,10 @@ function createCalculator(){
             .replace(/x/g, '*');
 
             try{
-                if (/[a-zA-Z]/g.test(calculation)) {
-                    alert('Conta inválida');
-                    return;
-                }
 
                 calculation = eval(calculation);
 
-                if (!calculation) {
+                if (!calculation && calculation != 0) {
                     alert('Conta inválida');
                     return;
                 }
