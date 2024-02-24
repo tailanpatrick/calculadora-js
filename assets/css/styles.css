@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/led-digital-7');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #2D2A37;
+    overflow-y: hidden;
+    
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2D2A37;
+}
+
+.box-display {
+    height: 25%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    border-bottom: 3px solid #39363D;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.12);
+    flex-flow: column nowrap;
+    gap: 20px;
+
+}
+
+.box-display input {
+    text-align: right;
+    font-size: 40px;
+    max-width: 80%;
+    background-color: transparent;
+    padding-right: 40px;
+    border: none;
+    outline: none;
+    color: #EBEBEB;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1.5px;
+    cursor: hidden;
+    pointer-events: none;
+       
+}
+
+.no-cursor {
+    caret-color: transparent;
+}
+
+.box-display .small-display {
+    font-size: 20px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+.box-btns {
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(80px, 0.1fr));
+    gap: 0px 5px;
+    padding: 100px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 40%;
+    font-size: 36px;
+    background-color: rgba(48, 45, 58, 1);
+    border: none;
+    color: #EBEBEB;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.35), inset -1px 12px 10px -6px rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+
+}
+
+.btn img {
+    width: 60%;
+    height: 60%;
+    margin-top: 9px;
+    
+}
+
+.btn.btn-purple {
+    background: #613d9c;
+}
+
+.btn.btn-light-purple {
+    background: #975DFA;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75), inset -1px 12px 10px -6px rgba(0, 0, 0, 0.12);
+}
+
+.btn.btn-text-purple{
+    color: #975DFA;
+    
+}
+
+.btn:active{
+    background: rgba(97, 61, 156, 0.8);
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.btn.btn-purple:active {
+    background: #975DFA;
+}
+
+@media screen and (max-width:376px) {
+    .box-btns {  
+        gap: 10px 5px;
+        padding: 40px;
+        justify-items: center;
+        align-items: center;
+    }
+}

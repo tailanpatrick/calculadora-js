@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px) {
+    body {
+        background: linear-gradient(90deg, rgba(9,9,10,1) 0%, rgba(57,54,61,1) 73%, rgba(57,54,61,1) 75%);
+      
+    }
+    .container {
+       width: 400px;
+       height: 600px;
+       float: right;
+       margin: 10px 150px 10px 0;
+       border-radius: 50px;
+       box-shadow: inset -1px 12px 6px -6px rgba(255, 255, 255, 0.12), 3px 10px 5px rgba(0, 0, 0, 0.5), -3px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .box-btns {
+        padding: 38px;
+    }
+}
+
