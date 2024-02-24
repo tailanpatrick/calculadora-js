@@ -71,9 +71,8 @@ function createCalculator(){
                 if (el.classList.contains('btn-eq')){
                     this.performCalculation();
                 }
-
+                if (!isMobile) this.display.focus();
             });
-            if (!isMobile) this.display.focus();
         },
 
         pressKey(){
