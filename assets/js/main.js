@@ -14,7 +14,7 @@ function createCalculator(){
         },
 
         performCalculation(){
-    
+
             let calculation = this.display.value.toLowerCase()
             .replace(/÷/g, '/')
             .replace(/x/g, '*');
@@ -31,7 +31,6 @@ function createCalculator(){
                     alert('Conta inválida');
                     return;
                 }
-                this.displayLastCalc.value = this.display.value.toLowerCase() + '=';
                 this.display.value = calculation;
             } catch(e){
                 alert('Conta inválida');
@@ -58,6 +57,7 @@ function createCalculator(){
                 
                 if (el.classList.contains('btn-num')){
                     this.btnForDisplay(el.innerText);
+                    this.displayLastCalc.value = String(this.display.value) + '=';
                 }
 
                 if (el.classList.contains('btn-clear')){
@@ -71,6 +71,7 @@ function createCalculator(){
                 if (el.classList.contains('btn-eq')){
                     this.performCalculation();
                 }
+
                 if (!isMobile) this.display.focus();
             });
         },
@@ -80,7 +81,10 @@ function createCalculator(){
                 if (e.keyCode === 13){
                     this.performCalculation();
             
+                } else {
+                    this.displayLastCalc.value = String(this.display.value) + '=';
                 }
+
                 if (e.key.toLowerCase() === 'c'){
                     this.clearDisplay();
                 }
@@ -90,12 +94,14 @@ function createCalculator(){
                         this.display.classList.add("no-cursor");
                     }, 2000);
                 }
+
             });
 
             this.display.addEventListener('keydown', (e) => {
                 if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
                     this.display.classList.remove("no-cursor");
                 }
+
             });
 
         },
