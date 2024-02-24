@@ -22,6 +22,7 @@ function createCalculator(){
             try{
 
                 calculation = eval(calculation);
+                calculation = calculation.toFixed(7).replace(/0+$/, "");
 
                 if (!calculation && calculation != 0) {
                     alert('Conta inválida');
