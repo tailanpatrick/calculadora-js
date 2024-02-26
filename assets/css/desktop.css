@@ -19,6 +19,9 @@
     .box-btns {
         padding: 20px;
         align-items: center;
+        justify-content: center;
+        justify-items: center;
+        justify-content: center;
     }
 }
 
