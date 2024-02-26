@@ -65,6 +65,7 @@ body {
 }
 
 .box-btns {
+    margin: 0 auto;
     height: 70%;
     display: grid;
     grid-template-columns: repeat(4, minmax(80px, 0.1fr));
