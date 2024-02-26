@@ -12,8 +12,13 @@
        box-shadow: inset -1px 12px 6px -6px rgba(255, 255, 255, 0.12), 3px 10px 5px rgba(0, 0, 0, 0.5), -3px 0px 5px rgba(0, 0, 0, 0.5);
     }
 
+    .box-display {
+        height: 25%;
+    }
+
     .box-btns {
-        padding: 38px;
+        padding: 20px;
+        align-items: center;
     }
 }
 

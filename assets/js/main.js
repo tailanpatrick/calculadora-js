@@ -43,12 +43,12 @@ function createCalculator(){
             this.displayLastCalc.value = '';
             this.pressKey();
             
-            this.display.focus();
+            if (!isMobile) this.display.focus();
         },
 
         deleteOne(){
             this.display.value = this.display.value.slice(0, -1);
-            this.display.focus()
+            if (!isMobile) this.display.focus()
         },
 
         btnClick(){
