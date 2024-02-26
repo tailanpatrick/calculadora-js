@@ -23,7 +23,7 @@ body {
 }
 
 .box-display {
-    height: 30%;
+    height: 28%;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -65,15 +65,14 @@ body {
 }
 
 .box-btns {
-    margin: 0 auto;
-    height: 70%;
+    height: 72%;
     display: grid;
     grid-template-columns: repeat(4, minmax(80px, 0.1fr));
     gap: 0px 5px;
     padding: 60px;
     justify-content: center;
     justify-items: center;
-    
+    justify-content: center;
 }
 
 .btn {
